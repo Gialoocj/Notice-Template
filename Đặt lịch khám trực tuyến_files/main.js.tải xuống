@@ -1,0 +1,28 @@
+const btt = document.querySelector('.btn-go-to-top');
+window.addEventListener('scroll', () => {
+  var scrollPosition = window.scrollY;
+  if (scrollPosition > 200) {
+    btt.style.display = 'block';
+  } else {
+    btt.style.display = 'none';
+  }
+});
+
+// const zoomLevels = {
+//   smallScreen: "70%",
+//   mediumScreen: "85%",
+//   largeScreen: "100%"
+// };
+
+// const screenWidth = window.innerWidth;
+// var zoomLevel;
+
+// if (screenWidth < 1300) {
+//   zoomLevel = zoomLevels.smallScreen;
+// } else if (screenWidth < 1600) {
+//   zoomLevel = zoomLevels.mediumScreen;
+// } else {
+//   zoomLevel = zoomLevels.largeScreen;
+// }
+
+// document.body.style.zoom = zoomLevel;
